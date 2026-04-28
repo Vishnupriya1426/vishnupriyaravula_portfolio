@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishnupriya portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="layout-container">
+    <!-- LEFT SIDEBAR (Sticky) -->
+    <header class="sidebar">
+      <div class="logo">Vishnupriya</div>
+
+      <section class="hero-mini">
+        <h1>Vishnupriya Ravula</h1>
+        <h2><span id="typed"></span></h2>
+        <p class="short-bio"></p>
+
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#about" class="active"><span></span>About</a></li>
+            <li><a href="#skills"><span></span>Skills</a></li>
+            <li><a href="#projects"><span></span>Projects</a></li>
+            <li><a href="#certificates"><span></span>Certifications</a></li>
+            <li><a href="#achievements"><span></span>Achievements</a></li>
+            <li><a href="#contact"><span></span>Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <div class="sidebar-footer">
+        <div class="social-icons">
+          <a href="https://github.com/Vishnupriya1426" target="_blank" aria-label="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+              width="24" height="24" style="filter: brightness(0) invert(1);">
+          </a>
+          <a href="https://www.linkedin.com/in/vishnupriya-ravula/" target="_blank" aria-label="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"
+              width="24" height="24">
+          </a>
+          <a href="https://leetcode.com/u/VishnuRavula/" target="_blank" aria-label="LeetCode">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode"
+              width="24" height="24">
+          </a>
+          <a href="https://www.geeksforgeeks.org/user/vishnupriyaravula/" target="_blank" aria-label="GeeksforGeeks">
+            <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="GeeksforGeeks" width="24" height="24">
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- RIGHT CONTENT (Scrollable) -->
+    <main id="content" class="content">
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <h2 class="section-title">About</h2>
+        <!-- Restored Image layout but adapted for column -->
+        <div class="about-content">
+          <div class="about-text">
+            <p>I am Vishnupriya Ravula, an aspiring <span class="highlight">software developer</span> with a strong
+              foundation in computer science, skilled in <span class="highlight">Java, C, HTML, CSS, JavaScript</span>
+              and expertised in datastructures and algorithms.</p>
+            <br>
+            <p>With hands-on experience in building user-friendly web solutions, I'm passionate about driving
+              technological innovation and continuously seeking dynamic opportunities to grow professionally.</p>
+            <br>
+            <p>In the past, I've had the opportunity to develop software across a variety of settings. Currently, I'm
+              focused on building accessible, inclusive products and digital experiences.</p>
+
+            <div class="buttons-mini">
+              <a href="https://drive.google.com/file/d/1-i18Qs1PAx1nMJWeiVEB6tr7Fjp5a73C/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="resume-btn" id="resume-download-btn">Download
+                Resume</a>
+            </div>
+          </div>
+          <!-- Keeping image optional or smaller in text flow if preferred, or removing if strictly text-focused like Brittany -->
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">Java</div>
+          <div class="skill-item">Data Structures & Algorithms</div>
+          <div class="skill-item">HTML & CSS</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">SQL</div>
+          <div class="skill-item">Spring Boot</div>
+          <div class="skill-item">Python</div>
+        </div>
+
+        <div class="skill-bars-container">
+          <div class="skill-bar-minimal">
+            <span class="skill-name">Java</span>
+            <div class="bar-track">
+              <div class="bar-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-minimal">
+            <span class="skill-name">Data Structures & Algorithms</span>
+            <div class="bar-track">
+              <div class="bar-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-minimal">
+            <span class="skill-name">HTML & CSS</span>
+            <div class="bar-track">
+              <div class="bar-progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-minimal">
+            <span class="skill-name">JavaScript</span>
+            <div class="bar-track">
+              <div class="bar-progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-minimal">
+            <span class="skill-name">SQL</span>
+            <div class="bar-track">
+              <div class="bar-progress" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-minimal">
+            <span class="skill-name">Spring Boot</span>
+            <div class="bar-track">
+              <div class="bar-progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-minimal">
+            <span class="skill-name">Python</span>
+            <div class="bar-track">
+              <div class="bar-progress" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-list">
+          <!-- Project 1 -->
+
+
+          <!-- Project 2 -->
+          <a href="#" class="project-link" data-aos="fade-up">
+            <div class="project-card-minimal">
+              <div class="project-image">
+                <img src="lost_found_thumb.png" alt="Lost and Found System UI" class="project-thumb">
+              </div>
+              <div class="project-info">
+                <h3>Lost & Found System</h3>
+                <p>Smart application to reconnect users with lost belongings using Java Spring Boot and intelligent
+                  matching.</p>
+                <ul class="tech-tags">
+                  <li>Spring Boot</li>
+                  <li>Java</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 3 -->
+          <a href="#" class="project-link" data-aos="fade-up">
+            <div class="project-card-minimal">
+              <div class="project-image">
+                <img src="skillara_thumb.png" alt="Skillara Dashboard" class="project-thumb">
+              </div>
+              <div class="project-info">
+                <h3>Skillara</h3>
+                <p>AI-powered career development platform personalizing internship recommendations.</p>
+                <ul class="tech-tags">
+                  <li>Java</li>
+                  <li>Spring Boot</li>
+                  <li>React</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 4 (verifycert) -->
+        <a href="#" class="project-link" data-aos="fade-up">
+          <div class="project-card-minimal">
+            <div class="project-image">
+              <img src="login_thumbnail.png" alt="VerifyCert Login UI" class="project-thumb">
+            </div>
+            <div class="project-info">
+              <h3>VerifyCert</h3>
+              <p>Certificate Verification using Blockchain and MongoDB.</p>
+              <ul class="tech-tags">
+                <li>Blockchain</li>
+                <li>MongoDB</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+  </section>
+
+      <!-- Certifications Section -->
+      <section id="certificates" class="section">
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="cert-list">
+
+          <div class="cert-item" data-aos="fade-up">
+            <div class="cert-date">2024</div>
+            <div class="cert-details">
+              <div class="cert-header">
+                <h3>160-Day DSA Mastery Challenge</h3>
+                <a href="gfg.png" class="cert-link" title="View Certificate">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+              <h4>GeeksforGeeks</h4>
+              <p>Mastering advanced data structures and algorithms through relentless daily problem-solving.</p>
+            </div>
+          </div>
+
+          <div class="cert-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-date">2024</div>
+            <div class="cert-details">
+              <div class="cert-header">
+                <h3>Ninja Slayground 2.0</h3>
+                <a href="ninjas.png" class="cert-link" title="View Certificate">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+              <h4>Coding Ninjas</h4>
+              <p>Conquered Level 2 Challenge demonstrating consistent coding prowess.</p>
+            </div>
+          </div>
+
+          <div class="cert-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="cert-date">2024</div>
+            <div class="cert-details">
+              <div class="cert-header">
+                <h3>24-Hour Hackathon Challenger</h3>
+                <a href="hackademia.png" class="cert-link" title="View Certificate">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+              <h4>Hackademia</h4>
+              <p>Demonstrated unwavering dedication and resilience by completing a 24-hour college hackathon.</p>
+            </div>
+          </div>
+
+          <div class="cert-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="cert-date">2024</div>
+            <div class="cert-details">
+              <div class="cert-header">
+                <h3>AWS Cloud Foundations</h3>
+                <a href="cloud.png" class="cert-link" title="View Certificate">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+              <h4>AWS</h4>
+              <p>Mastering core services, security, and architecture fundamentals.</p>
+            </div>
+          </div>
+
+          <div class="cert-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="cert-date">2024</div>
+            <div class="cert-details">
+              <div class="cert-header">
+                <h3>Google AI Essentials Certified</h3>
+                <a href="couresera.png" class="cert-link" title="View Certificate">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+              <h4>Coursera</h4>
+              <p>Mastering practical AI fundamentals with Google and Coursera.</p>
+            </div>
+          </div>
+
+          <div class="cert-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="cert-date">2024</div>
+            <div class="cert-details">
+              <div class="cert-header">
+                <h3>Project Management Strategist</h3>
+                <a href="microsoft.png" class="cert-link" title="View Certificate">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+              <h4>Microsoft / LinkedIn</h4>
+              <p>Mastered essential project planning and execution techniques.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section id="achievements" class="section">
+        <h2 class="section-title">Achievements</h2>
+
+        <div class="cert-list">
+          <div class="cert-item" data-aos="fade-up">
+            <div class="cert-date">2025</div>
+            <div class="cert-details">
+              <div class="cert-header">
+                <h3>Google Developer Groups (GDG) Core Team Member</h3>
+                <a href="https://www.linkedin.com/posts/vishnupriya-ravula_gdg-coreteam-hackathonexperience-activity-7424471663653576704-9wHh?utm_source=share&utm_medium=member_android&rcm=ACoAAFP2a14B7zqI9Gj-xL6v5inJtOy9Gq2TVTk"
+                  class="cert-link" target="_blank" title="View on LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+              <h4>GDG On Campus</h4>
+              <p>Selected as a Core Team Member for Google Developer Groups (GDG), an acknowledgment of my technical
+                leadership, community advocacy, and passion for innovation. Instrumental in orchestrating impactful tech
+                events, fostering collaborative developer ecosystems, and mentoring aspiring technologists to drive
+                community-wide growth and engagement.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-container-mini">
+      <!-- Connect Trigger -->
+      <div id="connect-trigger" class="connect-trigger">
+        <h3>
+          Connect <span id="connect-arrow">&rarr;</span>
+        </h3>
+      </div>
+
+      <!-- Hidden Content -->
+      <div id="contact-content" style="display: none;">
+        <p style="margin-bottom: 30px; max-width: 500px;">If you are interested in working together, please fill out
+          the form below. I'll get back to you as soon as possible.</p>
+
+        <form action="https://formsubmit.co/vishnupriyaravula3@gmail.com" method="POST" class="contact-form-mini"
+          id="contact-form">
+          <!-- AJAX handling: _next is not strictly needed but good fallback. We will preventDefault in JS. -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New message from your portfolio!">
+
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Name" required class="form-input">
+            <input type="email" name="email" placeholder="Email" required class="form-input">
+          </div>
+
+          <input type="text" name="subject" placeholder="Subject" required class="form-input">
+
+          <textarea name="message" rows="5" placeholder="Message..." required class="form-textarea"></textarea>
+
+          <button type="submit" class="submit-btn" id="form-submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Success Message (Active state handled by JS) -->
+      <div id="success-message"
+        style="display: none; text-align: center; padding: 40px; background: rgba(94, 234, 212, 0.1); border-radius: 8px;">
+        <h3 style="color: var(--accent); margin-bottom: 10px; font-size: 1.5rem;">🎉 Message Sent!</h3>
+        <p>Thank you for reaching out. I'll get back to you shortly.</p>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer class="mobile-footer">
+
+  </footer>
+
+  </main>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+    console.log("Script starting...");
+
+    AOS.init();
+
+    var typed = new Typed("#typed", {
+      strings: ["Java Programmer", "Full stack Developer", "Machine learning Engineer"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+
+    // Active Link Highlighting
+    const sections = document.querySelectorAll('section');
+    const navLi = document.querySelectorAll('.nav-links li a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLi.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href').includes(current)) {
+          a.classList.add('active');
+        }
+      });
+    });
+
+    // Connect Trigger Logic
+    const connectTrigger = document.getElementById('connect-trigger');
+    const contactContent = document.getElementById('contact-content');
+    const connectArrow = document.getElementById('connect-arrow');
+
+    if (connectTrigger && contactContent) {
+      connectTrigger.addEventListener('click', () => {
+        if (contactContent.style.display === 'none') {
+          contactContent.style.display = 'block';
+          contactContent.style.animation = 'fadeIn 0.5s ease';
+          connectArrow.style.transform = 'rotate(90deg)';
+        } else {
+          contactContent.style.display = 'none';
+          connectArrow.style.transform = 'rotate(0deg)';
+        }
+      });
+    }
+
+    // Contact Form & Resume - Native handling is used for better reliability
+    const contactForm = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('form-submit-btn');
+    const successMessage = document.getElementById('success-message');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent native form submission and redirection
+
+        if (submitBtn) {
+          submitBtn.innerHTML = 'Sending...';
+          submitBtn.style.opacity = '0.7';
+          submitBtn.style.cursor = 'not-allowed';
+          submitBtn.disabled = true;
+        }
+
+        const formData = new FormData(this);
+
+        fetch(this.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+          .then(response => {
+            if (response.ok) {
+              contactForm.style.display = 'none';
+              if (successMessage) {
+                successMessage.style.display = 'block';
+                successMessage.style.animation = 'fadeIn 0.5s ease';
+              }
+              this.reset();
+            } else {
+              alert("Oops! There was a problem submitting your form. Please try again.");
+            }
+          })
+          .catch(error => {
+            alert("Oops! There was a problem submitting your form. Please check your connection and try again.");
+          })
+          .finally(() => {
+            if (submitBtn) {
+              submitBtn.innerHTML = 'Send Message';
+              submitBtn.style.opacity = '1';
+              submitBtn.style.cursor = 'pointer';
+              submitBtn.disabled = false;
+            }
+          });
+      });
+    }
+    // Resume Download Notification
+    const resumeBtn = document.getElementById('resume-download-btn');
+    const downloadToast = document.getElementById('download-toast');
+
+    if (resumeBtn && downloadToast) {
+      resumeBtn.addEventListener('click', () => {
+        downloadToast.innerHTML = '✅ Opening Resume...';
+        downloadToast.style.background = 'var(--accent)';
+
+        downloadToast.style.display = 'block';
+        // Small delay to allow display: block to apply before animating
+        setTimeout(() => {
+          downloadToast.style.transform = 'translateY(0)';
+        }, 10);
+        
+        // Hide after 3 seconds
+        setTimeout(() => {
+          downloadToast.style.transform = 'translateY(100px)';
+          setTimeout(() => {
+            downloadToast.style.display = 'none';
+          }, 300);
+        }, 3000);
+      });
+    }
+  </script>
+  
+  <!-- Toast Notification Element -->
+  <div id="download-toast" style="display: none; position: fixed; bottom: 20px; right: 20px; background: var(--accent); color: var(--bg-color); padding: 15px 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); font-weight: 600; z-index: 9999; transform: translateY(100px); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+    ✅ Opening Resume...
+  </div>
+</body>
+
+</html>

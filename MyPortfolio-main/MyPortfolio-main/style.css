@@ -1,0 +1,577 @@
+/* Global Vars */
+:root {
+  --bg-color: #0f172a;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --accent: #5eead4;
+  /* Brittany's teal accent, can keep orangered if preferred but teal fits the vibe */
+  --hover-bg: rgba(94, 234, 212, 0.1);
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+/* === LAYOUT === */
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* === LEFT SIDEBAR === */
+.sidebar {
+  width: 45%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  display: none;
+  /* Hidden on desktop in this layout usually, or small */
+}
+
+.hero-mini h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.5rem;
+}
+
+.hero-mini h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.short-bio {
+  max-width: 300px;
+  margin-bottom: 4rem;
+}
+
+/* Nav Styles */
+.nav-links li {
+  margin-bottom: 1rem;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 0;
+}
+
+.nav-links a span {
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background-color: var(--text-secondary);
+  margin-right: 15px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--text-primary);
+}
+
+.nav-links a:hover span,
+.nav-links a.active span {
+  width: 60px;
+  background-color: var(--text-primary);
+}
+
+/* Socials */
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  /* spacing from bottom */
+}
+
+.social-icons a {
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color: var(--text-primary);
+  transform: translateY(-3px);
+}
+
+/* === RIGHT CONTENT === */
+.content {
+  width: 55%;
+  margin-left: 45%;
+  /* Pushes content to the right */
+  padding: 80px 0;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+.section-title {
+  display: none;
+  /* Typically hidden in this layout as nav highlights, or styled differently */
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--text-primary);
+  /* if keeping titles for mobile */
+}
+
+/* Highlight Text */
+.highlight {
+  color: #ffffff;
+  font-weight: 600;
+  /* making it bold as well to stand out more */
+}
+
+/* === ABOUT SECTION === */
+.about-text p {
+  margin-bottom: 15px;
+}
+
+.buttons-mini {
+  margin-top: 20px;
+}
+
+.resume-btn {
+  display: inline-block;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.resume-btn:hover {
+  background: var(--hover-bg);
+}
+
+/* === SKILLS === */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.skill-item {
+  background: rgba(45, 212, 191, 0.1);
+  color: var(--accent);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.skill-bars-container {
+  max-width: 400px;
+}
+
+.skill-bar-minimal {
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.bar-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar-progress {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+/* === CERTIFICATES (Card List) === */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cert-item {
+  display: flex;
+  gap: 20px;
+  transition: background 0.2s;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cert-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cert-date {
+  font-size: 0.85rem;
+  min-width: 80px;
+  padding-top: 4px;
+  text-transform: uppercase;
+}
+
+.cert-details h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.cert-link {
+  color: var(--text-secondary);
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.cert-link:hover {
+  color: var(--accent);
+}
+
+.cert-details h4 {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.cert-details p {
+  font-size: 0.9rem;
+}
+
+
+/* === PROJECTS (Minimal List/Card) === */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-link:hover .project-card-minimal {
+  background: rgba(255, 255, 255, 0.05);
+  /* subtle highlight on hover */
+}
+
+.project-card-minimal {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.project-image {
+  min-width: 120px;
+  width: 120px;
+  height: 80px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover .project-thumb {
+  transform: scale(1.1);
+}
+
+.project-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: var(--text-primary);
+}
+
+.project-info h3::after {
+  content: " ↗";
+  font-size: 0.9em;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.project-link:hover h3::after {
+  transform: translate(3px, -3px);
+  color: var(--accent);
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.tech-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-tags li {
+  font-size: 0.8rem;
+  color: var(--accent);
+  background: rgba(94, 234, 212, 0.1);
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* === CONTACT === */
+.email-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  border-bottom: 2px solid transparent;
+}
+
+.email-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* === MOBILE RESPONSIVENESS === */
+@media (max-width: 1000px) {
+  .layout-container {
+    flex-direction: column;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    padding: 60px 20px 20px;
+    height: auto;
+  }
+
+  .nav-links {
+    display: none;
+    /* Hide sticky nav links on mobile, typically replace with hamburger or just scroll */
+  }
+
+  .short-bio {
+    max-width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 0;
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    display: block;
+    /* Show section titles on mobile */
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: sticky;
+    top: 0;
+    background: rgba(15, 23, 42, 0.9);
+    padding: 20px 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+  }
+
+  .project-card-minimal {
+    flex-direction: column-reverse;
+    /* Info top, image bottom or just stack */
+  }
+
+  .project-image {
+    display: none;
+    /* hide images on small mobile to save space or stack differently */
+  }
+}
+
+/* === CONTACT FORM (Mini) === */
+.contact-container-mini {
+  max-width: 600px;
+  margin: 0 auto;
+  /* Centers container */
+}
+
+.connect-trigger {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  /* Aligns content to center */
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  margin-top: -15px;
+  /* Pulls it up slightly closer to projects */
+}
+
+.connect-trigger h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.connect-trigger:hover h3 {
+  color: var(--accent);
+}
+
+.connect-trigger #connect-arrow {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.connect-trigger:hover #connect-arrow {
+  color: var(--accent);
+  transform: translateX(5px);
+  /* Subtle nudge on hover */
+}
+
+/* Rotate arrow when active (handled by JS, but specific class can be added if needed, currently inline style override in JS logic works but simple css class is cleaner. Sticking to current JS logic for rotation, just adding base styles) */
+
+.contact-form-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid transparent;
+  padding: 12px;
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.submit-btn {
+  align-self: flex-start;
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: var(--hover-bg);
+}
+
+.direct-contact h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+}
+
+.direct-contact p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.highlight-link {
+  color: var(--accent);
+}
+
+/* === UTILS === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+/* === SPECIFIC ADJUSTMENTS === */
+/* === SPECIFIC ADJUSTMENTS === */
+#projects {
+  margin-bottom: 0px;
+  /* Reduced to zero to create "just below" effect */
+}
+
+/* Ensure connect aligns with project card padding content visually */
+.connect-trigger {
+  padding-left: 0;
+}
